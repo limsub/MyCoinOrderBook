@@ -45,6 +45,6 @@ struct OrderBookItem: Hashable, Identifiable {
 }
 
 // 에러 모델
-struct ErrorAPIMoedl: Codable {
+struct ErrorAPIModel: Codable {
     let name: String 
 }

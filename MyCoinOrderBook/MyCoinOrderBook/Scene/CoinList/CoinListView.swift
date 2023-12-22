@@ -40,7 +40,6 @@ struct CoinListView: View {
                 
             }
         }
-        
         .navigationDestination(for: Market.self) { item  in
 //            let viewModel = Hori
         }

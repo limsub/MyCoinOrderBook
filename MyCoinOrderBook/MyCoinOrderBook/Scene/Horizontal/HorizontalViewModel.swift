@@ -61,4 +61,40 @@ class HorizontalViewModel: ObservableObject {
         }
     }
     
+    func fetchOrderBook() {
+        let url = URL(string: "https://api.upbit.com/v1/orderbook?markets=\(marketData.market)")!
+        
+        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            
+            guard let data = data else {
+                print("데이터 응답 없음")
+                return
+            }
+            
+            do {
+                let decodedData = try JSONDecoder().decode([OrderBookModelElement].self, from: data)
+                print("-- 디코딩 성공", Int.random(in: 1...1000))
+                
+                DispatchQueue.main.async {
+                    let unitResult = decodedData.first?.orderbookUnits ?? [OrderbookUnit(askPrice: 0, bidPrice: 0, askSize: 0, bidSize: 0)]
+                    
+                    let ask = unitResult.map { OrderBookItem(price: $0.askPrice, size: $0.askSize) }.sorted(by: { $0.price > $1.price })
+                    let bid = unitResult.map { OrderBookItem(price: $0.bidPrice, size: $0.bidSize) }.sorted(by: { $0.price > $1.price })
+                    
+                    self?.askOrderBook = ask
+                    self?.bidOrderBook = bid
+                }
+            } catch {
+                print("-- 디코딩 실패", Int.random(in: 1...1000))
+                do {
+                    let decodedError = try JSONDecoder().decode(ErrorAPIModel.self, from: data)
+                    print(decodedError)
+                } catch {
+                    print("디코딩 실패 에러마저 디코딩 실패")
+                }
+            }
+            
+        }.resume()
+    }
+    
 }
