@@ -22,6 +22,7 @@
 		48758C992B3559A7005F8002 /* OrderBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758C982B3559A7005F8002 /* OrderBookModel.swift */; };
 		48758C9C2B355A59005F8002 /* HorizontalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758C9B2B355A59005F8002 /* HorizontalData.swift */; };
 		48758CA02B355A8B005F8002 /* HorizontalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758C9F2B355A8B005F8002 /* HorizontalViewModel.swift */; };
+		48758CA22B355BFF005F8002 /* HorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CA12B355BFF005F8002 /* HorizontalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		48758C982B3559A7005F8002 /* OrderBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookModel.swift; sourceTree = "<group>"; };
 		48758C9B2B355A59005F8002 /* HorizontalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalData.swift; sourceTree = "<group>"; };
 		48758C9F2B355A8B005F8002 /* HorizontalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalViewModel.swift; sourceTree = "<group>"; };
+		48758CA12B355BFF005F8002 /* HorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				48758C9B2B355A59005F8002 /* HorizontalData.swift */,
 				48758C9F2B355A8B005F8002 /* HorizontalViewModel.swift */,
+				48758CA12B355BFF005F8002 /* HorizontalView.swift */,
 			);
 			path = Horizontal;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				48758C9C2B355A59005F8002 /* HorizontalData.swift in Sources */,
 				48758C912B355609005F8002 /* CoinListView.swift in Sources */,
 				48758CA02B355A8B005F8002 /* HorizontalViewModel.swift in Sources */,
+				48758CA22B355BFF005F8002 /* HorizontalView.swift in Sources */,
 				48758C5F2B35558C005F8002 /* ContentView.swift in Sources */,
 				48758C962B355700005F8002 /* Market.swift in Sources */,
 				48758C8B2B3555E5005F8002 /* MainView.swift in Sources */,
