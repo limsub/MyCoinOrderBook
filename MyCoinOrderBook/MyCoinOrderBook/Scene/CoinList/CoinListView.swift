@@ -41,7 +41,8 @@ struct CoinListView: View {
             }
         }
         .navigationDestination(for: Market.self) { item  in
-//            let viewModel = Hori
+            let viewModel = HorizontalViewModel(market: item)
+            HorizontalView(viewModel: viewModel)
         }
         
     }

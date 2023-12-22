@@ -74,6 +74,8 @@ class HorizontalViewModel: ObservableObject {
             do {
                 let decodedData = try JSONDecoder().decode([OrderBookModelElement].self, from: data)
                 print("-- 디코딩 성공", Int.random(in: 1...1000))
+//                print(decodedData)
+                print("개수 : ", decodedData.first?.orderbookUnits.count)
                 
                 DispatchQueue.main.async {
                     let unitResult = decodedData.first?.orderbookUnits ?? [OrderbookUnit(askPrice: 0, bidPrice: 0, askSize: 0, bidSize: 0)]
