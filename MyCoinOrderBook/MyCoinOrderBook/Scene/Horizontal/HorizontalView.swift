@@ -39,7 +39,7 @@ struct HorizontalView: View {
                             
                             ZStack(alignment: .leading) {
                                 
-                                let graphSize = CGFloat(item.size) / CGFloat(viewModel.largest()) * graphWidth
+                                let graphSize = CGFloat(item.size) / CGFloat(viewModel.largestAskSize()) * graphWidth
                                 
                                 Rectangle()
                                     .foregroundColor(.blue.opacity(0.4))
@@ -72,7 +72,7 @@ struct HorizontalView: View {
                             
                             ZStack(alignment: .leading) {
                                 
-                                let graphSize = CGFloat(item.size) / CGFloat(viewModel.largest()) * graphWidth
+                                let graphSize = CGFloat(item.size) / CGFloat(viewModel.largestBidSize()) * graphWidth
                                 
                                 Rectangle()
                                     .foregroundColor(.blue.opacity(0.4))

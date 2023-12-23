@@ -27,6 +27,8 @@
 		48758CA72B356F81005F8002 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CA62B356F81005F8002 /* BannerView.swift */; };
 		48758CA92B356FA9005F8002 /* BannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CA82B356FA9005F8002 /* BannerViewModel.swift */; };
 		48758CAB2B357D60005F8002 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CAA2B357D60005F8002 /* TestView.swift */; };
+		48758CAE2B366448005F8002 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CAD2B366448005F8002 /* Color+Extension.swift */; };
+		48758CB12B3664EA005F8002 /* ConstantColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CB02B3664EA005F8002 /* ConstantColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		48758CA62B356F81005F8002 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		48758CA82B356FA9005F8002 /* BannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModel.swift; sourceTree = "<group>"; };
 		48758CAA2B357D60005F8002 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		48758CAD2B366448005F8002 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		48758CB02B3664EA005F8002 /* ConstantColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 		48758C5B2B35558C005F8002 /* MyCoinOrderBook */ = {
 			isa = PBXGroup;
 			children = (
+				48758CAF2B3664E4005F8002 /* Constant */,
+				48758CAC2B36643F005F8002 /* Extension */,
 				48758C972B35592F005F8002 /* Scene */,
 				48758C942B3556FA005F8002 /* Model */,
 				48758C5C2B35558C005F8002 /* MyCoinOrderBookApp.swift */,
@@ -212,6 +218,22 @@
 				48758CA82B356FA9005F8002 /* BannerViewModel.swift */,
 			);
 			path = Banner;
+			sourceTree = "<group>";
+		};
+		48758CAC2B36643F005F8002 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				48758CAD2B366448005F8002 /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		48758CAF2B3664E4005F8002 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				48758CB02B3664EA005F8002 /* ConstantColor.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +373,9 @@
 				48758C5F2B35558C005F8002 /* ContentView.swift in Sources */,
 				48758CA42B356B22005F8002 /* Banner.swift in Sources */,
 				48758CAB2B357D60005F8002 /* TestView.swift in Sources */,
+				48758CAE2B366448005F8002 /* Color+Extension.swift in Sources */,
 				48758C962B355700005F8002 /* Market.swift in Sources */,
+				48758CB12B3664EA005F8002 /* ConstantColor.swift in Sources */,
 				48758C8B2B3555E5005F8002 /* MainView.swift in Sources */,
 				48758C932B355610005F8002 /* CoinListViewModel.swift in Sources */,
 				48758C5D2B35558C005F8002 /* MyCoinOrderBookApp.swift in Sources */,
