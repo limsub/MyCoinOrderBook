@@ -13,7 +13,7 @@ struct HorizontalView: View {
     
     
     var body: some View {
-        NavigationView {
+        
             
             ScrollView {
 
@@ -107,13 +107,12 @@ struct HorizontalView: View {
             }
             .onAppear {
                 viewModel.fetchOrderBook()
+                viewModel.timer()
             }
             .navigationTitle(viewModel.marketData.koreanName)
             .navigationBarTitleDisplayMode(.inline)
             .scrollIndicators(.hidden)
-        }
-            
-        
+
     }
 }
 

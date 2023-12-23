@@ -15,18 +15,15 @@ struct CoinListView: View {
     var body: some View {
         
         LazyVStack {
-            Button("임의의 데이터 호출 버튼") {
-                viewModel.fetchAllMarket()
-            }
-            .background(.yellow)
-            
+
             ForEach(viewModel.market, id: \.self) { item in
                 NavigationLink(value: item) {
                     HStack {
-                        VStack(alignment: .center) {
+                        VStack(alignment: .leading) {
                             
                             Text(item.koreanName)
                                 .fontWeight(.bold)
+                                .foregroundStyle(.black)
                             
                             Text(item.englishName)
                                 .font(.caption)
@@ -34,11 +31,15 @@ struct CoinListView: View {
                         }
                         Spacer()
                         Text(item.market)
+                            .foregroundStyle(.black)
                     }
                     .padding(18)
                 }
                 
             }
+        }
+        .onAppear {
+            viewModel.fetchAllMarket()
         }
         .navigationDestination(for: Market.self) { item  in
             let viewModel = HorizontalViewModel(market: item)

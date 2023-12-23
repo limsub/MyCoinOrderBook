@@ -57,7 +57,8 @@ class HorizontalViewModel: ObservableObject {
     func timer() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             self.value += 1
-            self.fetchDummyData()
+//            self.fetchDummyData()
+            self.fetchOrderBook()
         }
     }
     
