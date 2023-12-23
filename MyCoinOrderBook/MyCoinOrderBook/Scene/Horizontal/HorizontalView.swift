@@ -13,7 +13,8 @@ struct HorizontalView: View {
     
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
+            
             ScrollView {
 
                 // GoemetryReader : 그 자체로 'View'이며, container 안의 View 스스로의 크기와 위치를 함수로 정의한다
@@ -109,7 +110,10 @@ struct HorizontalView: View {
             }
             .navigationTitle(viewModel.marketData.koreanName)
             .navigationBarTitleDisplayMode(.inline)
+            .scrollIndicators(.hidden)
         }
+            
+        
     }
 }
 

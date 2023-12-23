@@ -19,7 +19,7 @@ struct BannerView: View {
                 .overlay {
                     Circle()
                         .fill(.white.opacity(0.3))
-                        .offset(x: -40, y: 40)
+                        .offset(x: -60, y: 40)
                         .scaleEffect(1.2, anchor: .bottomLeading)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 25))  // 영역을 깎아준다 (밖으로 삐져나오는 부분 없애주기)
@@ -35,9 +35,11 @@ struct BannerView: View {
                     .font(.title)
                     .bold()
             }
-//            .visualEffect { content, geometryProxy in
+            .visualEffect { content, geometryProxy in
 //                content.offset(x: scrollOffset(geometryProxy))
-//            }
+//                content.offset(x: geometryProxy.frame(in: .global).origin.y)
+                content.offset(x: -geometryProxy.bounds(of: .scrollView)!.minX - 20)
+            }
             .padding(18)
             .frame(maxWidth: .infinity, alignment: .leading)
             
@@ -55,6 +57,6 @@ struct BannerView: View {
     
 }
 
-#Preview {
-    BannerView()
-}
+//#Preview {
+//    BannerView()
+//}
