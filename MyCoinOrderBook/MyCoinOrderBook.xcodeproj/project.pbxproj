@@ -29,6 +29,15 @@
 		48758CAB2B357D60005F8002 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CAA2B357D60005F8002 /* TestView.swift */; };
 		48758CAE2B366448005F8002 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CAD2B366448005F8002 /* Color+Extension.swift */; };
 		48758CB12B3664EA005F8002 /* ConstantColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CB02B3664EA005F8002 /* ConstantColor.swift */; };
+		48758CB92B367FDD005F8002 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48758CB82B367FDD005F8002 /* WidgetKit.framework */; };
+		48758CBB2B367FDD005F8002 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48758CBA2B367FDD005F8002 /* SwiftUI.framework */; };
+		48758CBE2B367FDD005F8002 /* MyCoinOrderBookWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CBD2B367FDD005F8002 /* MyCoinOrderBookWidgetBundle.swift */; };
+		48758CC02B367FDD005F8002 /* MyCoinOrderBookWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CBF2B367FDD005F8002 /* MyCoinOrderBookWidget.swift */; };
+		48758CC22B367FDF005F8002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48758CC12B367FDF005F8002 /* Assets.xcassets */; };
+		48758CC62B367FDF005F8002 /* MyCoinOrderBookWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 48758CB62B367FDC005F8002 /* MyCoinOrderBookWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		48758CCF2B368435005F8002 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CCD2B3683CC005F8002 /* Provider.swift */; };
+		48758CD12B36B85B005F8002 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CD02B36B85B005F8002 /* SimpleEntry.swift */; };
+		48758CD32B36B8F2005F8002 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CD22B36B8F2005F8002 /* EntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +55,28 @@
 			remoteGlobalIDString = 48758C582B35558C005F8002;
 			remoteInfo = MyCoinOrderBook;
 		};
+		48758CC42B367FDF005F8002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48758C512B35558C005F8002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48758CB52B367FDC005F8002;
+			remoteInfo = MyCoinOrderBookWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48758CCA2B367FDF005F8002 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				48758CC62B367FDF005F8002 /* MyCoinOrderBookWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		48758C592B35558C005F8002 /* MyCoinOrderBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoinOrderBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +104,16 @@
 		48758CAA2B357D60005F8002 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		48758CAD2B366448005F8002 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		48758CB02B3664EA005F8002 /* ConstantColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantColor.swift; sourceTree = "<group>"; };
+		48758CB62B367FDC005F8002 /* MyCoinOrderBookWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyCoinOrderBookWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		48758CB82B367FDD005F8002 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		48758CBA2B367FDD005F8002 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		48758CBD2B367FDD005F8002 /* MyCoinOrderBookWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoinOrderBookWidgetBundle.swift; sourceTree = "<group>"; };
+		48758CBF2B367FDD005F8002 /* MyCoinOrderBookWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoinOrderBookWidget.swift; sourceTree = "<group>"; };
+		48758CC12B367FDF005F8002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48758CC32B367FDF005F8002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48758CCD2B3683CC005F8002 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		48758CD02B36B85B005F8002 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
+		48758CD22B36B8F2005F8002 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +138,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48758CB32B367FDC005F8002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48758CBB2B367FDD005F8002 /* SwiftUI.framework in Frameworks */,
+				48758CB92B367FDD005F8002 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +156,8 @@
 				48758C5B2B35558C005F8002 /* MyCoinOrderBook */,
 				48758C6C2B35558E005F8002 /* MyCoinOrderBookTests */,
 				48758C762B35558E005F8002 /* MyCoinOrderBookUITests */,
+				48758CBC2B367FDD005F8002 /* MyCoinOrderBookWidget */,
+				48758CB72B367FDD005F8002 /* Frameworks */,
 				48758C5A2B35558C005F8002 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +168,7 @@
 				48758C592B35558C005F8002 /* MyCoinOrderBook.app */,
 				48758C692B35558E005F8002 /* MyCoinOrderBookTests.xctest */,
 				48758C732B35558E005F8002 /* MyCoinOrderBookUITests.xctest */,
+				48758CB62B367FDC005F8002 /* MyCoinOrderBookWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,6 +288,45 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		48758CB72B367FDD005F8002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48758CB82B367FDD005F8002 /* WidgetKit.framework */,
+				48758CBA2B367FDD005F8002 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48758CBC2B367FDD005F8002 /* MyCoinOrderBookWidget */ = {
+			isa = PBXGroup;
+			children = (
+				48758CCC2B3683B9005F8002 /* Entry */,
+				48758CCB2B3683B5005F8002 /* Provider */,
+				48758CBD2B367FDD005F8002 /* MyCoinOrderBookWidgetBundle.swift */,
+				48758CBF2B367FDD005F8002 /* MyCoinOrderBookWidget.swift */,
+				48758CC12B367FDF005F8002 /* Assets.xcassets */,
+				48758CC32B367FDF005F8002 /* Info.plist */,
+			);
+			path = MyCoinOrderBookWidget;
+			sourceTree = "<group>";
+		};
+		48758CCB2B3683B5005F8002 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				48758CCD2B3683CC005F8002 /* Provider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		48758CCC2B3683B9005F8002 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				48758CD02B36B85B005F8002 /* SimpleEntry.swift */,
+				48758CD22B36B8F2005F8002 /* EntryView.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,10 +337,12 @@
 				48758C552B35558C005F8002 /* Sources */,
 				48758C562B35558C005F8002 /* Frameworks */,
 				48758C572B35558C005F8002 /* Resources */,
+				48758CCA2B367FDF005F8002 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				48758CC52B367FDF005F8002 /* PBXTargetDependency */,
 			);
 			name = MyCoinOrderBook;
 			productName = MyCoinOrderBook;
@@ -292,6 +385,23 @@
 			productReference = 48758C732B35558E005F8002 /* MyCoinOrderBookUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		48758CB52B367FDC005F8002 /* MyCoinOrderBookWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48758CC72B367FDF005F8002 /* Build configuration list for PBXNativeTarget "MyCoinOrderBookWidgetExtension" */;
+			buildPhases = (
+				48758CB22B367FDC005F8002 /* Sources */,
+				48758CB32B367FDC005F8002 /* Frameworks */,
+				48758CB42B367FDC005F8002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCoinOrderBookWidgetExtension;
+			productName = MyCoinOrderBookWidgetExtension;
+			productReference = 48758CB62B367FDC005F8002 /* MyCoinOrderBookWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,6 +423,9 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 48758C582B35558C005F8002;
 					};
+					48758CB52B367FDC005F8002 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 48758C542B35558C005F8002 /* Build configuration list for PBXProject "MyCoinOrderBook" */;
@@ -331,6 +444,7 @@
 				48758C582B35558C005F8002 /* MyCoinOrderBook */,
 				48758C682B35558E005F8002 /* MyCoinOrderBookTests */,
 				48758C722B35558E005F8002 /* MyCoinOrderBookUITests */,
+				48758CB52B367FDC005F8002 /* MyCoinOrderBookWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -356,6 +470,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48758CB42B367FDC005F8002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48758CC22B367FDF005F8002 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +525,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48758CB22B367FDC005F8002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48758CD12B36B85B005F8002 /* SimpleEntry.swift in Sources */,
+				48758CC02B367FDD005F8002 /* MyCoinOrderBookWidget.swift in Sources */,
+				48758CD32B36B8F2005F8002 /* EntryView.swift in Sources */,
+				48758CCF2B368435005F8002 /* Provider.swift in Sources */,
+				48758CBE2B367FDD005F8002 /* MyCoinOrderBookWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -415,6 +549,11 @@
 			isa = PBXTargetDependency;
 			target = 48758C582B35558C005F8002 /* MyCoinOrderBook */;
 			targetProxy = 48758C742B35558E005F8002 /* PBXContainerItemProxy */;
+		};
+		48758CC52B367FDF005F8002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48758CB52B367FDC005F8002 /* MyCoinOrderBookWidgetExtension */;
+			targetProxy = 48758CC42B367FDF005F8002 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -541,6 +680,7 @@
 		48758C7E2B35558E005F8002 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +710,7 @@
 		48758C7F2B35558E005F8002 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +813,60 @@
 			};
 			name = Release;
 		};
+		48758CC82B367FDF005F8002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S9WHYP486;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCoinOrderBookWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyCoinOrderBookWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sub.MyCoinOrderBook.MyCoinOrderBookWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48758CC92B367FDF005F8002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S9WHYP486;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCoinOrderBookWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyCoinOrderBookWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sub.MyCoinOrderBook.MyCoinOrderBookWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -707,6 +902,15 @@
 			buildConfigurations = (
 				48758C842B35558E005F8002 /* Debug */,
 				48758C852B35558E005F8002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48758CC72B367FDF005F8002 /* Build configuration list for PBXNativeTarget "MyCoinOrderBookWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48758CC82B367FDF005F8002 /* Debug */,
+				48758CC92B367FDF005F8002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
