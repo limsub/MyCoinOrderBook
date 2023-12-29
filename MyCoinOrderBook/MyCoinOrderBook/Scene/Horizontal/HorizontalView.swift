@@ -108,7 +108,7 @@ struct HorizontalView: View {
             }
             .onAppear {
                 viewModel.fetchOrderBook()
-//                viewModel.timer()
+                viewModel.timer()
                 
                 print("----- 현재 활성화 되어 있는 위젯 -----")
                 WidgetCenter.shared.getCurrentConfigurations { response in
