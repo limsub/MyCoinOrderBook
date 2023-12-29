@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct HorizontalView: View {
     
@@ -107,7 +108,24 @@ struct HorizontalView: View {
             }
             .onAppear {
                 viewModel.fetchOrderBook()
-                viewModel.timer()
+//                viewModel.timer()
+                
+                print("----- 현재 활성화 되어 있는 위젯 -----")
+                WidgetCenter.shared.getCurrentConfigurations { response in
+                    switch response {
+                    case .success(let info):
+                        print(info)
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
+                
+                print("이전 : ", UserDefaults.groupShared.string(forKey: "Market"))
+                UserDefaults.groupShared.set(viewModel.marketData.koreanName, forKey: "Market")
+                print("이후 : ", UserDefaults.groupShared.string(forKey: "Market"))
+                
+                WidgetCenter.shared.reloadTimelines(ofKind: "MyCoinOrderBookWidget")
+                
             }
             .navigationTitle(viewModel.marketData.koreanName)
             .navigationBarTitleDisplayMode(.inline)

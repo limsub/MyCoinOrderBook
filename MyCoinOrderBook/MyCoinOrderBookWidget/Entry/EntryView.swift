@@ -16,6 +16,7 @@ struct MyCoinOrderBookWidgetEntryView : View {
         VStack {
             Text(entry.date, style: .time)
             Text(entry.emoji)
+            Text(UserDefaults.groupShared.string(forKey: "Market") ?? "기본값" )
             Text(entry.title)
             Text(entry.price.formatted())
         }

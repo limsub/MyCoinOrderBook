@@ -38,6 +38,8 @@
 		48758CCF2B368435005F8002 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CCD2B3683CC005F8002 /* Provider.swift */; };
 		48758CD12B36B85B005F8002 /* SimpleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CD02B36B85B005F8002 /* SimpleEntry.swift */; };
 		48758CD32B36B8F2005F8002 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CD22B36B8F2005F8002 /* EntryView.swift */; };
+		48758CD82B37B758005F8002 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CD72B37B758005F8002 /* UserDefaults+Extension.swift */; };
+		48758CD92B37B81F005F8002 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48758CD72B37B758005F8002 /* UserDefaults+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,9 @@
 		48758CCD2B3683CC005F8002 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		48758CD02B36B85B005F8002 /* SimpleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEntry.swift; sourceTree = "<group>"; };
 		48758CD22B36B8F2005F8002 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		48758CD52B37B5DA005F8002 /* MyCoinOrderBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyCoinOrderBook.entitlements; sourceTree = "<group>"; };
+		48758CD62B37B62A005F8002 /* MyCoinOrderBookWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyCoinOrderBookWidgetExtension.entitlements; sourceTree = "<group>"; };
+		48758CD72B37B758005F8002 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +158,7 @@
 		48758C502B35558C005F8002 = {
 			isa = PBXGroup;
 			children = (
+				48758CD62B37B62A005F8002 /* MyCoinOrderBookWidgetExtension.entitlements */,
 				48758C5B2B35558C005F8002 /* MyCoinOrderBook */,
 				48758C6C2B35558E005F8002 /* MyCoinOrderBookTests */,
 				48758C762B35558E005F8002 /* MyCoinOrderBookUITests */,
@@ -176,6 +182,7 @@
 		48758C5B2B35558C005F8002 /* MyCoinOrderBook */ = {
 			isa = PBXGroup;
 			children = (
+				48758CD52B37B5DA005F8002 /* MyCoinOrderBook.entitlements */,
 				48758CAF2B3664E4005F8002 /* Constant */,
 				48758CAC2B36643F005F8002 /* Extension */,
 				48758C972B35592F005F8002 /* Scene */,
@@ -276,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				48758CAD2B366448005F8002 /* Color+Extension.swift */,
+				48758CD72B37B758005F8002 /* UserDefaults+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -504,6 +512,7 @@
 				48758CA92B356FA9005F8002 /* BannerViewModel.swift in Sources */,
 				48758C8D2B3555F1005F8002 /* MainViewModel.swift in Sources */,
 				48758CA72B356F81005F8002 /* BannerView.swift in Sources */,
+				48758CD82B37B758005F8002 /* UserDefaults+Extension.swift in Sources */,
 				48758C992B3559A7005F8002 /* OrderBookModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +542,7 @@
 				48758CC02B367FDD005F8002 /* MyCoinOrderBookWidget.swift in Sources */,
 				48758CD32B36B8F2005F8002 /* EntryView.swift in Sources */,
 				48758CCF2B368435005F8002 /* Provider.swift in Sources */,
+				48758CD92B37B81F005F8002 /* UserDefaults+Extension.swift in Sources */,
 				48758CBE2B367FDD005F8002 /* MyCoinOrderBookWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +693,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyCoinOrderBook/MyCoinOrderBook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyCoinOrderBook/Preview Content\"";
@@ -713,6 +724,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyCoinOrderBook/MyCoinOrderBook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyCoinOrderBook/Preview Content\"";
@@ -818,6 +830,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyCoinOrderBookWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S9WHYP486;
@@ -845,6 +858,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyCoinOrderBookWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S9WHYP486;
